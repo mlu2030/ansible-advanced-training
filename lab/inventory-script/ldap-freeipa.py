@@ -67,7 +67,7 @@ def listgroup():
 # search for hostgroups (objectclass-ipahostgroup),
 # and retrieve all values of their 'member' attributes
 
-	l = ldap.initialize(LDAP_URI)
+  l = ldap.initialize(LDAP_URI)
   basedn = LDAP_BASEDN
   search_scope = ldap.SCOPE_SUBTREE
   search_filter = "(objectclass=ipahostgroup)"
