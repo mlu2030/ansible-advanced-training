@@ -1,0 +1,39 @@
+---
+- name: Canberra
+  address: |
+    Level 11
+    40 Marcus Clarke Street
+    Canberra City ACT 2601
+    Australia
+  phone:
+  - +61 2 6145 2810
+
+- name: Sydney
+  address: |
+    Level 35
+    100 Miller Street
+    North Sydney NSW 2061
+    Australia
+  phone:
+  - +61 2 8923 2800
+  - +61 2 8923 2899
+
+- name: Shanghai
+  address: |
+    15F-119, Tower 1, 8, Century Ave,
+    Pudong Xinqu District,
+    Shanghai 200120
+    China
+  phone:
+  - 800-810-2100
+  - 400-890-2100
+
+- name: Hong Kong
+  address: |
+    Suite 3507-8, 35th Floor
+    Tower 2, The Gateway
+    Harour City, Kowloon
+    Hong Kong
+  phone:
+  - +852 2350 7600
+  - +852 2350 7676

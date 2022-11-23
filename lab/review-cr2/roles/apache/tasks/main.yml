@@ -1,0 +1,26 @@
+---
+# tasks file for web_server
+
+- block:
+  - name: Ensure HTTPD packages are present
+    yum:
+      name: "{{ item }}"
+      state: present
+    with_items:
+      - httpd
+      - php
+      - git
+      - php-mysqlnd
+
+  - name: Ensure SELinux is set to allow httpd connections to a remote database
+    seboolean:
+      name: httpd_can_network_connect_db
+      state: true
+      persistent: yes
+
+  - name: Ensure HTTPD service is started and enabled
+    service:
+      name: httpd
+      state: started
+      enabled: yes
+  become: true
